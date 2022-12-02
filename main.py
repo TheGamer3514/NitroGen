@@ -8,6 +8,7 @@ except ImportError:
     print("Requests Installed")
 #import
 import random
+from keepalive import keep_alive
 import string
 import time
 import requests
@@ -45,4 +46,6 @@ class Generator:
                 print("Working: " + code)
                 file = open("workedcodes.txt", "a+")
                 file.write("\n" + code)
+
+keep_alive()
 Generator()
