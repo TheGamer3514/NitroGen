@@ -1,4 +1,6 @@
 #Check If Installed
+import os
+
 try: 
     import requests  
 except ImportError: 
