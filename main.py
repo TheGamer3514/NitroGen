@@ -11,7 +11,6 @@ import random
 from keepalive import keep_alive
 import string
 import time
-import os
 import requests
 #start the gen
 print("Gamer's Nitro Generator\nDiscord: Gamer3514#7679\nIf you like this tool give it a star on github!")
