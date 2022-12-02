@@ -15,7 +15,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-	return 'Im in!'
+	return 'Sub To The Gamer3514'
 
 def run():
   app.run(
