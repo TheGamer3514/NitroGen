@@ -1,16 +1,4 @@
 #Check If Installed
-import os
-try: 
-    import requests  
-except ImportError: 
-    print("Requests Not Found...\nInstalling...")
-    os.system("pip install requests")
-    print("Requests Installed")
-#import
-import random
-from keepalive import keep_alive
-import string
-#Check If Installed
 try: 
     import requests  
 except ImportError: 
@@ -45,7 +33,7 @@ class Generator:
             code = gencode()
             self.codes.append(code)
             response = requests.get(
-                "https://discord.com/api/v7/entitlements/gift-codes/" + code + "?with_application=false&with_subscription_plan=true")
+                "https://discord.com/api/v10/entitlements/gift-codes/" + code + "?with_application=false&with_subscription_plan=true")
             data = response.json()
             if data["message"] == 'Unknown Gift Code':
                 print("Invalid: " + code)
