@@ -8,7 +8,9 @@ Make a pull request and we will check over it! Darren is perfect so i don't see 
 # Setup:
 1. Install Python
 2. Run the `main.py` file
-5. Done! Super Easy Setup
+3. Done! Super Easy Setup
+4. To disable the keep alive server go to line 14 of ``main.py`` and change ``True`` to ``False``
+
 
 
 # Links:
