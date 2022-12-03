@@ -10,8 +10,20 @@ except ImportError:
 import random
 from keepalive import keep_alive
 import string
+#Check If Installed
+try: 
+    import requests  
+except ImportError: 
+    print("Requests Not Found...\nInstalling...")
+    os.system("pip install requests")
+    print("Requests Installed")
+#import
+import random
+import string
 import time
+import os
 import requests
+web = True #Change this to False to disable the keep alive server
 #start the gen
 print("Gamer's Nitro Generator\nDiscord: Gamer3514#7679\nIf you like this tool give it a star on github!")
 time.sleep(0.75)
@@ -46,6 +58,8 @@ class Generator:
                 print("Working: " + code)
                 file = open("workedcodes.txt", "a+")
                 file.write("\n" + code)
-
-keep_alive()
+#Keep Alive
+if web == True:
+    from keepalive import keep_alive
+    keep_alive()
 Generator()
