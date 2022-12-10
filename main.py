@@ -1,5 +1,6 @@
 #Check If Installed
 try: 
+    import os
     import requests  
 except ImportError: 
     print("Requests Not Found...\nInstalling...")
