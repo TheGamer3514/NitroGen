@@ -13,6 +13,9 @@ Make a pull request and we will check over it!
 
 
 
-# Links:
-- [Discord Server](https://discord.gg/3qvpkgWSbF)
-- gamer@sillydev.co.uk
+## Resources
+
+- [Discord server](https://discord.gg/sillydev)
+- [Free hosting](https://sillydev.co.uk)
+- Contact me: gamer@sillydev.co.uk
+
